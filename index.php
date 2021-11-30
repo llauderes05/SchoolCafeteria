@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Main Page</title>
-	<link rel="stylesheet" type="text/css" href="mp.css">
+	<link rel="stylesheet" type="text/css" href="style/mp.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 			<h2>Are you a ... ?</h2>
 
 			<div class="banner-btn">
-				<a href=""><span></span>ADMIN</a>
+				<a href="login.php"><span></span>ADMIN</a>
 				<a href=""><span></span>CUSTOMER</a>
 			</div>
 		</div>
