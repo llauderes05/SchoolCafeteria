@@ -4,14 +4,22 @@
 }
 
 body{
-    background: #0c5763;
+    background: #a8a8a8;
     font-family: "Century Gothic", sans-serif;
 }
 
 .banner-text{
-    text-align: center;
+    text-align: justify;
     color: #bdbddb;
-    padding-top: 180px;
+    padding: 30px;
+    width: 400px;
+    height: 600px;
+    background: #3ad1d1;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
 
 .banner-text h1{

@@ -40,6 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <input  type="password" name="password" placeholder="Password" autocomplete="off" required>
   <input  class="login" type="submit" name="" value="Login">
   
+  
 </form>
 <a href="index.php"><input class="back" type="submit" name="" value="Back"></a>
 
