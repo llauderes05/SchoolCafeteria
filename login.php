@@ -39,10 +39,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <input  type="text" name="username" placeholder="Username" autocomplete="off" required>
   <input  type="password" name="password" placeholder="Password" autocomplete="off" required>
   <input  class="login" type="submit" name="" value="Login">
-  
-  
+  <a href="index.php"><input class="back" type="submit" name="" value="Back"></a>
 </form>
-<a href="index.php"><input class="back" type="submit" name="" value="Back"></a>
+
 
   </body>
 </html>
