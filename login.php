@@ -38,8 +38,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <h1>Login</h1>
   <input  type="text" name="username" placeholder="Username" autocomplete="off" required>
   <input  type="password" name="password" placeholder="Password" autocomplete="off" required>
-  <button onclick="history.back()">Back</button>
   <input  class="login" type="submit" name="" value="Login">
+  <button onclick="history.back()">Back</button>
 </form>
 
   </body>
