@@ -7,6 +7,8 @@
 
 <body>
 	<div class="box">
+		<img src="LOGO.png">
+		<br><br><br><br>
 		<h1>WELCOME</h1>
 		<p>YOU ARE A ...</p>
 

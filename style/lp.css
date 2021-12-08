@@ -23,6 +23,14 @@ body{
     box-shadow: 0 0 20px rgba(168, 122, 122, 0.5);
 }
 
+.box img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 h1, p{
     font-style: normal;
     text-align: center;
@@ -30,7 +38,7 @@ h1, p{
 }
 
 .btn{
-    top: 50%;
+    top: 60%;
     left: 50%;
     position: absolute;
     text-align: center;
@@ -46,4 +54,33 @@ h1, p{
     border: .5px solid rgb(134, 134, 134);
     position: relative;
     text-decoration: none;
+}
+
+.btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 118, 118);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn a:hover span{
+    width: 100%;
+}
+
+.btn a:hover{
+    color: #ffffff;
+}
+
+@media screen and (max-width: 770px){
+    .box h1{
+    font-size: 44px;
+    }
+    .btn a{
+        display: block;
+        margin: 20px auto;
+    }
 }
