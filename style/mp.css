@@ -27,7 +27,7 @@ body{
    
 .h2{
     font-size: 90px;
-   }
+}
  
 .btn{
     vertical-align: center;
@@ -55,20 +55,13 @@ body{
     background: #fff;
     z-index: -1;
     transition: 0.5s;
-   }
+}
    
 .btn a:hover span{
     width: 100%;
-   }
+}
    
 .btn a:hover{
     color: #8080ff;
-   }
-   
- @media screen and (max-width: 770px){
-    .banner-btn a{
-        display: block;
-        margin: 20px auto;
-    }
 }
    
