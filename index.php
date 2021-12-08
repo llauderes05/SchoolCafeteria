@@ -12,7 +12,7 @@
 
 		<div class="banner-btn">
 			<a href="login.php"><span></span>ADMIN</a>
-			<a href=""><span></span>CUSTOMER</a>
+			<a href="login.php"><span></span>CUSTOMER</a>
 		</div>
 	</div>
 </body>
