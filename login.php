@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $count = mysqli_num_rows($result);
     
     if($count > 0) {
-        header("location:   index.html");
+        header("location:   admin.php");
     } else {
         echo '<script>alert("Invalid Credentials")</script>';
     }
@@ -38,8 +38,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   <h1>Login</h1>
   <input  type="text" name="username" placeholder="Username" autocomplete="off" required>
   <input  type="password" name="password" placeholder="Password" autocomplete="off" required>
-  <input  class="login" type="submit" name="" value="Login">
   <button onclick="history.back()">Back</button>
+  <input  class="login" type="submit" name="" value="Login">
+  
 </form>
 
   </body>
