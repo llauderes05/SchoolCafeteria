@@ -6,6 +6,7 @@
 body{
     background: white;
     font-family: "Century Gothic", sans-serif;
+    padding: auto;
 }
 #sideNav{
     width: 150px;

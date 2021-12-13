@@ -92,6 +92,11 @@
                         }
                         ?>
             </tbody>
+            <tr>
+                <td colspan="4"><form action="index.php" method="post">
+                <input type="submit">
+                </form></td>
+            </tr>
         </table>
     </div>
 </body>
