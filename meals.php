@@ -49,27 +49,27 @@ include_once 'connection.php';
 <div class="table">
 <table class="content-table">
                     <tr>
-                        <th> System ID </th>
-                        <th> Username </th>
-                        <th> Password </th>
+                        <th> Item Name </th>
+                        <th> Price </th>
+                        <th> Stock </th>
                         <th> Edit</th>
                         <th> Delete</th>
                     </tr>
                 
                 <tbody>
                     <?php
-                        $sql = "SELECT ID, username, password FROM admin";
+                        $sql = "SELECT *  FROM meals";
                         $result = $conn->query($sql);
                         
                         if($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 ?>
                                 <tr>
-                                    <td> <?php echo $row["ID"] ?></td>
-                                    <td> <?php echo $row["username"] ?></td>
-                                    <td> <?php echo $row["password"] ?></td>
-                                    <td><a href="edit.php?ID=<?php echo $row['ID']; ?>">Edit</a></td>
-                                    <td><a href="delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
+                                    <td> <?php echo $row["ITEM_NAME"] ?></td>
+                                    <td> <?php echo $row["PRICE"] ?></td>
+                                    <td> <?php echo $row["STOCKS"] ?></td>
+                                    <td><a href="edit.php?ITEM_NAME=<?php echo $row['ITEM_NAME']; ?>">Edit</a></td>
+                                    <td><a href="deletem.php?ITEM_NAME=<?php echo $row['ITEM_NAME']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
@@ -84,16 +84,15 @@ include_once 'connection.php';
                 </tbody>
             </table>
             </div>
-
             <div>
-                <form action="insert.php" method="post">
-                    <label>Username</label><br>
-                    <input type="text" name="username" require><br>
-                    <label>Password</label><br>
-                    <input type="password" name="password" require><br>
+                <form action="insertm.php" method="post">
+                    <label>Item Name</label><br>
+                    <input type="text" name="name" require><br>
+                    <label>Price</label><br>
+                    <input type="number" name="price" require><br>
+                    <label>Quantity</label><br>
+                    <input type="number" name="qty" require><br>
                     <input type="submit">
                 </form>
             </div>
-</body>
-</html>
-
+            </html>
