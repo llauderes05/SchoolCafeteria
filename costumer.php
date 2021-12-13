@@ -43,8 +43,6 @@
                         } else {
                             echo "No result";
                         }
-                        
-                        
                         ?>
             </tbody>
 
@@ -70,8 +68,6 @@
                         } else {
                             echo "No result";
                         }
-                        
-                        $conn->close();
                         ?>
             </tbody>
         </table>
