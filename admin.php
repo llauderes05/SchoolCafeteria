@@ -84,16 +84,22 @@ include_once 'connection.php';
                 </tbody>
             </table>
             </div>
+            
+            <section id="bg">
+                <div class="login-box">
+                    <h1>Login Here</h1>
+                    <form action="insert.php" method="post">
+                        
+                        <input type="text" placeholder="Add Username" name="" required>
+                        
+                        <input type="password" placeholder="Add Password" name="" required>
+                        <input type="submit" >
+                    </form>
+                </div>
 
-            <div>
-                <form action="insert.php" method="post">
-                    <label>Username</label><br>
-                    <input type="text" name="username" require><br>
-                    <label>Password</label><br>
-                    <input type="password" name="password" require><br>
-                    <input type="submit">
-                </form>
-            </div>
+            </section>
+
+            
 </body>
 </html>
 

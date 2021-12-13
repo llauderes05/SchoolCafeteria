@@ -4,9 +4,92 @@
 }
 
 body{
-    background: white;
     font-family: "Century Gothic", sans-serif;
-    padding: auto;
+}
+
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: transparent;
+    color: #000;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10%;
+    padding: 70px 30px;  
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid  #fff5ff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    font-family: Serif ;
+}
+
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #8080b2;
+    color: #fff5ff;
+    font-size: 18px;
+    font-family: Serif ;
+    border-radius: 12px;
+}
+
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #6666ff;
+    color: #fff5ff;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.login-box a:hover{
+    color: #fff5ff;
+}
+
+@media screen and (max-width: 770px)
+{
+    .login-box{
+       /* width: 320px;
+        height: 420px;*/
+        top: 50%;
+        left: 50%;
+    }
 }
 #sideNav{
     width: 150px;
@@ -58,14 +141,20 @@ nav ul li a{
     }
 }
 
-table, th, td {
+table{
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
+    padding: 5px;
     text-align: center;
-    
-  }
+}
 
-  .table{
-      padding: 50px;
+
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 5px;
+    padding: 5px;
+    text-align: center; 
+
   }
