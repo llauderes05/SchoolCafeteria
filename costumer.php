@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Costumer Page</title>
+    <title>Customer Page</title>
     <link rel="stylesheet" href="style/costumer.css">
 </head>
 <body>
