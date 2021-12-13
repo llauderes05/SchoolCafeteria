@@ -14,7 +14,7 @@
 
 		<div class="btn">
 				<a href="login.php"><span></span>ADMIN</a>
-				<a href=""><span></span>CUSTOMER</a>
+				<a href="costumer.php"><span></span>CUSTOMER</a>
 			</div>
 	</div>
 </body>
