@@ -87,12 +87,13 @@ include_once 'connection.php';
             <div>
                 <form action="insertm.php" method="post">
                     <label>Item Name</label><br>
-                    <input type="text" name="name" require><br>
+                    <input type="text" name="name" required><br>
                     <label>Price</label><br>
-                    <input type="number" name="price" require><br>
+                    <input type="number" name="price" required><br>
                     <label>Quantity</label><br>
-                    <input type="number" name="qty" require><br>
+                    <input type="number" name="qty" required><br>
                     <input type="submit">
                 </form>
             </div>
-            </html>
+</body>
+</html>

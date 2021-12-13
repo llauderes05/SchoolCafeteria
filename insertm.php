@@ -1,17 +1,17 @@
-<?php
-    header("Location: meals.php");
+<?php include_once 'connection.php' ?>
 
-    include_once("connection.php");
+<?
     
-    $un = $_REQUEST['item_name'];
+    $un = $_REQUEST['name'];
     $pw = $_REQUEST['price'];
     $qty = $_REQUEST['qty'];
     
-    $sql = "INSERT INTO `meals`(`username`, `password`) VALUES ('$un','$pw')";
+    
+    $sql = "INSERT INTO meals (`ITEM_NAME`, `PRICE`,'STOCKS') VALUES ('$un','$pw','$qty')";
     
     if($conn->query($sql) === true){
         echo '<script>alert("Successufully Added")</script>';
-        header("location:   admin.php");
+        header("location:   meals.php");
     } else {
         echo "ERROR: Could not able to execute $sql. " . $conn->error;
     }
