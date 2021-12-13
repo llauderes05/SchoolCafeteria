@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Costumer Page</title>
+    <title>Customer Page</title>
     <link rel="stylesheet" href="style/costumer.css">
 </head>
 <body>
@@ -94,7 +94,7 @@
             </tbody>
             <tr>
                 <td colspan="4"><form action="index.php" method="post">
-                <input type="submit">
+                <input type="submit" value="Submit">
                 </form></td>
             </tr>
         </table>
