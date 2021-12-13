@@ -73,7 +73,7 @@
                         ?>
             </tbody>
             <tr>
-                <th colspan="4">PASTA</th>
+                <th colspan="4">DRINKS</th>
             </tr>
             <tbody>
             <?php
