@@ -90,9 +90,9 @@ include_once 'connection.php';
                     <h1>Login Here</h1>
                     <form action="insert.php" method="post">
                         
-                        <input type="text" placeholder="Add Username" name="" require>
+                        <input type="text" placeholder="Add Username" name="" required>
                         
-                        <input type="password" placeholder="Add Password" name="" require>
+                        <input type="password" placeholder="Add Password" name="" required>
                         <input type="submit" >
                     </form>
                 </div>
