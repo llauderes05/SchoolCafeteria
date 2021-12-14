@@ -5,6 +5,7 @@
 
 body{
     font-family: "Century Gothic", sans-serif;
+    background: #a6f2ff;
 }
 
 .login-box{
@@ -147,6 +148,11 @@ table{
     margin: auto;
     padding: 5px;
     text-align: center;
+    top: 40%;
+    left: 60%;
+    bottom: 40%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 

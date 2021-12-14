@@ -5,7 +5,7 @@
 }
 
 #banner{
-    background-image: linear-gradient(rgba(0,0,1,0.3), #c1fff1), url('');
+    background-image: linear-gradient(rgba(0,0,1,0.3), #c1fff1);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -15,7 +15,7 @@
     padding: 30px;
     width: 320px;
     height: 420px;
-    background: #fec5bb;
+    background: #85cdf7;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -66,7 +66,7 @@ h1, p{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(255, 118, 118);
+    background: rgb(63, 174, 207);
     z-index: -1;
     transition: 0.5s;
 }

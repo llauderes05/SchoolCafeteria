@@ -48,7 +48,7 @@ include_once 'connection.php';
     </script>
 
 <div class="table">
-<table class="content-table">
+    <table class="content-table">
                     <tr>
                         <th> System ID </th>
                         <th> Username </th>
@@ -81,12 +81,12 @@ include_once 'connection.php';
                     
                     
                 </tbody>
-            </table>
-            </div>
+    </table>
+</div>
             
             <section id="bg">
                 <div class="login-box">
-                    <h1>Login Here</h1>
+                    <h1>Add User Here</h1>
                     <form action="insert.php" method="post">
                         
                         <input type="text" placeholder="Add Username" name="username" required>
