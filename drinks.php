@@ -70,7 +70,7 @@ include_once 'connection.php';
                                     <td> <?php echo $row["price"] ?></td>
                                     <td> <?php echo $row["stocks"] ?></td>
                                     <td><a href="edit.php?name=<?php echo $row['name']; ?>">Edit</a></td>
-                                    <td><a href="deleted.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
+                                    <td><a href="delete/deleted.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
@@ -84,7 +84,7 @@ include_once 'connection.php';
             </table>
             </div>
             <div>
-                <form action="insertd.php" method="post">
+                <form action="insert/insertd.php" method="post">
                     <label>Name</label><br>
                     <input type="text" name="name" autocomplete="off" required><br>
                     <label>Price</label><br>
