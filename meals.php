@@ -84,13 +84,10 @@ include_once 'connection.php';
             </table>
             </div>
             <div class="meals">
-                <h1>Stock for Meals</h1>
-                <form action="insertm.php" method="post">
-                    <label></label>
+                <h1>Add Stock for Meals</h1>
+                <form action="insertm.php" method="post">    
                     <input type="text" placeholder="Name" name="name" autocomplete="off" required>
-                    <label></label>
                     <input type="number" placeholder="Price" name="price" autocomplete="off" required>
-                    <label></label>
                     <input type="number" placeholder="Quantity" name="qty" autocomplete="off" required>
                     <input type="submit">
                 </form>
