@@ -2,9 +2,9 @@
 
 include "connection.php"; // Using database connection file here
 
-$id = $_GET['ITEM_NAME']; // get id through query string
+$id = $_GET['name']; // get id through query string
 
-$del = mysqli_query($conn,"delete from meals where ITEM_NAME = '$id'"); // delete query
+$del = mysqli_query($conn,"delete from meals where name = '$id'"); // delete query
 
 if($del)
 {

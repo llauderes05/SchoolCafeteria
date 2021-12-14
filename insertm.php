@@ -1,20 +1,19 @@
-<?php include_once 'connection.php' ?>
+<?php
+ include_once 'connection.php';
 
-<?
-    
-    $un = $_REQUEST['name'];
-    $pw = $_REQUEST['price'];
+    $na = $_REQUEST['name'];
+    $pr = $_REQUEST['price'];
     $qty = $_REQUEST['qty'];
     
     
-    $sql = "INSERT INTO meals (`ITEM_NAME`, `PRICE`,'STOCKS') VALUES ('$un','$pw','$qty')";
+    $sql = "INSERT INTO `meals`(`name`, `price`, `stocks`) VALUES ('$na','$pr','$qty')";
     
-    if($conn->query($sql) === true){
-        echo '<script>alert("Successufully Added")</script>';
-        header("location:   meals.php");
-    } else {
-        echo "ERROR: Could not able to execute $sql. " . $conn->error;
-    }
+	if ($conn->query($sql) === TRUE) {
+		header("Location: meals.php"); 
+	}else{
+		echo $conn->connect_error;
+	}
+	$conn->close();
  
 // Close connection
 $conn->close();

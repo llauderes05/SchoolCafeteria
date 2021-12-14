@@ -65,11 +65,11 @@ include_once 'connection.php';
                             while ($row = $result->fetch_assoc()) {
                                 ?>
                                 <tr>
-                                    <td> <?php echo $row["ITEM_NAME"] ?></td>
-                                    <td> <?php echo $row["PRICE"] ?></td>
-                                    <td> <?php echo $row["STOCKS"] ?></td>
-                                    <td><a href="edit.php?ITEM_NAME=<?php echo $row['ITEM_NAME']; ?>">Edit</a></td>
-                                    <td><a href="deletem.php?ITEM_NAME=<?php echo $row['ITEM_NAME']; ?>">Delete</a></td>   
+                                    <td> <?php echo $row["name"] ?></td>
+                                    <td> <?php echo $row["price"] ?></td>
+                                    <td> <?php echo $row["stocks"] ?></td>
+                                    <td><a href="edit.php?name=<?php echo $row['name']; ?>">Edit</a></td>
+                                    <td><a href="deletem.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
@@ -79,19 +79,17 @@ include_once 'connection.php';
                         
                         $conn->close();
                         ?>
-                    
-                    
                 </tbody>
             </table>
             </div>
             <div>
                 <form action="insertm.php" method="post">
-                    <label>Item Name</label><br>
-                    <input type="text" name="name" required><br>
+                    <label>Name</label><br>
+                    <input type="text" name="name" autocomplete="off" required><br>
                     <label>Price</label><br>
-                    <input type="number" name="price" required><br>
+                    <input type="number" name="price" autocomplete="off" required><br>
                     <label>Quantity</label><br>
-                    <input type="number" name="qty" required><br>
+                    <input type="number" name="qty" autocomplete="off" required><br>
                     <input type="submit">
                 </form>
             </div>
