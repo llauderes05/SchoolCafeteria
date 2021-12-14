@@ -35,7 +35,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number" value="0" name="meals"></td>
+                                    <td><a href="order.php?stocks=<?php echo $row['stocks']; ?>">Order</a></td>
                                 </tr>
                                 <?php
                             }
@@ -60,7 +60,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number" value="0" name="pasta"></td>
+                                    <td><a href="order.php?stocks=<?php echo $row['stocks']; ?>">Order</a></td>
                                 </tr>
                                 <?php
                             }
@@ -84,7 +84,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number" value="0" name="drinks"></td>
+                                    <td><a href="order.php?stocks=<?php echo $row['stocks']; ?>">Order</a></td>
                                 </tr>
                                 <?php
                             }
