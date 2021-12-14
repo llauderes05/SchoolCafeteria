@@ -34,7 +34,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number"></td>
+                                    <td><input type="number" value="0"></td>
                                 </tr>
                                 <?php
                             }
@@ -59,7 +59,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number"></td>
+                                    <td><input type="number" value="0"></td>
                                 </tr>
                                 <?php
                             }
@@ -83,7 +83,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number"></td>
+                                    <td><input type="number" value="0"></td>
                                 </tr>
                                 <?php
                             }
