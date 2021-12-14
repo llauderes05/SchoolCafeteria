@@ -10,7 +10,7 @@ $id = $_GET['id'];
     <title>Document</title>
 </head>
 <body>
-        <form action="updatem.php" method="post">
+        <form action="updated.php" method="post">
             <input type="hidden" name="id" required value="<?php echo $id; ?>" ><br>
 			<label>Name</label>
 			<input type="text" name="name" required><br>

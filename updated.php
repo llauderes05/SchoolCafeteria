@@ -9,7 +9,7 @@
 	$sql = "UPDATE `meals` SET `name`='$name',`price`='$price',`stocks`='$stocks' where id = '$id'"; // escape character
 	if ($conn->query($sql) === TRUE) {
 		echo $name." updated successfully!";
-		header("Location: meals.php"); 
+		header("Location: drinks.php"); 
 	} else {
 		$conn->error;
 	}
