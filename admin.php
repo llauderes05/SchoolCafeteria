@@ -68,7 +68,7 @@ include_once 'connection.php';
                                     <td> <?php echo $row["ID"] ?></td>
                                     <td> <?php echo $row["username"] ?></td>
                                     <td> <?php echo $row["password"] ?></td>
-                                    <td><a href="delete/delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
+                                    <td><a href="delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
@@ -87,11 +87,11 @@ include_once 'connection.php';
             <section id="bg">
                 <div class="login-box">
                     <h1>Login Here</h1>
-                    <form action="insert/insert.php" method="post">
+                    <form action="insert.php" method="post">
                         
-                        <input type="text" placeholder="Add Username" name="" required>
+                        <input type="text" placeholder="Add Username" name="username" required>
                         
-                        <input type="password" placeholder="Add Password" name="" required>
+                        <input type="password" placeholder="Add Password" name="password" required>
                         <input type="submit" >
                     </form>
                 </div>
