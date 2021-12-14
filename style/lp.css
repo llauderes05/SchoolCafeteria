@@ -4,8 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-   background: #fec5bb;
+#banner{
+    background-image: linear-gradient(rgba(0,0,1,0.3), #c1fff1), url('');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .box{
