@@ -19,6 +19,7 @@ include_once 'connection.php';
 				<li><a href="meals.php">Meals</a></li>
 				<li><a href="pasta.php">Pasta</a></li>
 				<li><a href="drinks.php">Drinks</a></li>
+                <h1 style="margin: 20px; color:white;"><a href="index.php">Home</a></h1>
 			</ul>
 		</nav>
 	</div>
@@ -52,7 +53,6 @@ include_once 'connection.php';
                         <th> System ID </th>
                         <th> Username </th>
                         <th> Password </th>
-                        <th> Edit</th>
                         <th> Delete</th>
                     </tr>
                 
@@ -68,7 +68,6 @@ include_once 'connection.php';
                                     <td> <?php echo $row["ID"] ?></td>
                                     <td> <?php echo $row["username"] ?></td>
                                     <td> <?php echo $row["password"] ?></td>
-                                    <td><a href="edit.php?ID=<?php echo $row['ID']; ?>">Edit</a></td>
                                     <td><a href="delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
