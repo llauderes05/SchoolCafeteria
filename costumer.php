@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/costumer.css">
 </head>
 <body>
+<form action="order.php" method="post">
     <div>
         <table>
             <tr><th colspan="4">MENU</th></tr>
@@ -34,7 +35,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number" value="0"></td>
+                                    <td><input type="number" value="0" name="meals"></td>
                                 </tr>
                                 <?php
                             }
@@ -59,7 +60,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number" value="0"></td>
+                                    <td><input type="number" value="0" name="pasta"></td>
                                 </tr>
                                 <?php
                             }
@@ -83,7 +84,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><input type="number" value="0"></td>
+                                    <td><input type="number" value="0" name="drinks"></td>
                                 </tr>
                                 <?php
                             }
@@ -93,7 +94,7 @@
                         ?>
             </tbody>
             <tr>
-                <td colspan="4"><form action="index.php" method="post">
+                <td colspan="4">
                 <input type="submit" value="Submit">
                 </form></td>
             </tr>
