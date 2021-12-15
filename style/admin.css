@@ -172,3 +172,27 @@ th, td {
     text-align: center; 
 
   }
+.first {
+    font-size: small;
+    border: 1px;
+    border-radius: 10px;
+    background-color: rgb(72, 72, 177);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.second {
+    font-size: small;
+    border: 1px;
+    border-radius: 10px;
+    background-color:red;
+    color:white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }

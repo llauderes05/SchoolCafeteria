@@ -69,8 +69,8 @@ include_once 'connection.php';
                                     <td> <?php echo $row["name"] ?></td>
                                     <td> <?php echo $row["price"] ?></td>
                                     <td> <?php echo $row["stocks"] ?></td>
-                                    <td><a href="editm.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-                                    <td><a href="deletem.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
+                                    <td><a class = "first" href="editm.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                                    <td><a class = "second" href="deletem.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
