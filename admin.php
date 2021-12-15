@@ -68,7 +68,7 @@ include_once 'connection.php';
                                     <td> <?php echo $row["ID"] ?></td>
                                     <td> <?php echo $row["username"] ?></td>
                                     <td> <?php echo $row["password"] ?></td>
-                                    <td><a href="delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
+                                    <td><a class = "second" href="delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
