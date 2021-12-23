@@ -1,19 +1,24 @@
 <?php include_once 'connection.php';
 
 
-	$meals = $_REQUEST['meals'];
-    $pasta = $_REQUEST['pasta'];
-    $drinks = $_REQUEST['drinks'];
-    echo $meals;
-    echo $pasta;
-    echo $drinks;
+	$stocks = $_REQUEST['stocks'];
+ 
 
-	// $sql = "UPDATE `meals` SET `name`='$name',`price`='$price',`stocks`='$stocks' where id = '$id'"; // escape character
-	// if ($conn->query($sql) === TRUE) {
-	// 	echo $name." updated successfully!";
-	// 	header("Location: meals.php"); 
-	// } else {
-	// 	$conn->error;
-	// }
-	// $conn->close();
  ?>
+ 
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>Order</title>
+ </head>
+ <body>
+     <form action="end.php" method="post">
+        <h1>How many would you like?</h1>
+        <input type='number' name="qty">
+        <input type="hidden" value="<?php echo $stocks; ?>" name="stocks">
+        <input type="submit">
+</form>
+    
+ </body>
+ </html>
