@@ -5,7 +5,7 @@
 
 body{
     font-family: "Century Gothic", sans-serif;
-    background: #a6f2ff;
+    background: #81c7d3;
 }
 
 .login-box, .meals, .pasta, .drinks{
@@ -65,7 +65,7 @@ h1{
     border: none;
     outline: none;
     height: 30px;
-    background: #8080b2;
+    background: #3ca1f3;
     color: #fff5ff;
     font-size: 18px;
     font-family: Serif ;
@@ -76,7 +76,7 @@ h1{
 .pasta input[type="submit"]:hover, .drinks input[type="submit"]:hover
 {
     cursor: pointer;
-    background: #6666ff;
+    background: #66fff7;
     color: #fff5ff;
 }
 
@@ -84,11 +84,11 @@ h1{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: darkgrey;
+    color: rgb(199, 228, 255);
 }
 
 .login-box a:hover{
-    color: #fff5ff;
+    color: #daeffd;
 }
 
 @media screen and (max-width: 770px)
@@ -153,6 +153,7 @@ nav ul li a{
 table{
     border: 1px solid black;
     border-collapse: collapse;
+    border-radius: 10px;
     margin: auto;
     padding: 5px;
     text-align: center;
