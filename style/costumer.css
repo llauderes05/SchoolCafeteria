@@ -18,6 +18,18 @@ table, tr, td, th{
     text-align: center;
 }
 
+tbody tr td a{
+    text-align: center;
+    background-color: rgb(21, 146, 204);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 3px 12px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
 input[type=number]{
    border: none;
    outline: none;

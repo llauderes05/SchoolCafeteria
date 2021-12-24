@@ -92,12 +92,12 @@
                             echo "No result";
                         }
                         ?>
-            </tbody>
+            <!-- </tbody>
             <tr>
                 <td colspan="4">
                 <input type="submit" value="Submit">
                 </form></td>
-            </tr>
+            </tr> -->
         </table>
     </div>
 </body>

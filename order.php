@@ -11,6 +11,7 @@
  <html lang="en">
  <head>
      <title>Order</title>
+     <link rel="stylesheet" href="style/order.css">
  </head>
  <body>
      <form action="end.php" method="post">

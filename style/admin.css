@@ -121,6 +121,18 @@ nav ul li a{
     color: white;
 }
 
+nav ul h2{
+    list-style: none;
+    margin: 50px 30px;
+    color: #85cdf7;
+}
+
+nav ul h2 a{
+    text-decoration: none;
+    color: #85cdf7;
+
+}
+
 #menuBtn{
     width:  50px;
     height: 50px;
@@ -172,28 +184,4 @@ th, td {
     padding: 5px;
     text-align: center; 
 
-  }
-.first {
-    font-size: small;
-    border: 1px;
-    border-radius: 10px;
-    background-color: rgb(72, 72, 177);
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    
-}
-
-.second {
-    font-size: small;
-    border: 1px;
-    border-radius: 10px;
-    background-color:red;
-    color:white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
   }
