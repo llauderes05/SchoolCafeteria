@@ -12,7 +12,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(rgba(96, 224, 247, 0.623), #8241b8);
+    background: #2b7db4;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 30px rgba(29, 112, 207, 0.5);
