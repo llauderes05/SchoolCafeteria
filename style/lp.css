@@ -4,6 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#exer{
+    background-image: url(omg.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 #banner{
     background-image: linear-gradient(rgba(0,0,1,0.3), #85cdf7);
     background-size: cover;
