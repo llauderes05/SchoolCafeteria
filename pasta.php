@@ -47,8 +47,8 @@ include_once 'connection.php';
         }
     </script>
 
-<div class="table">
-<table class="content-table">
+<table class="styled-table">
+                <thead>
                     <tr>
                         <th> Item Name </th>
                         <th> Price </th>
@@ -69,8 +69,8 @@ include_once 'connection.php';
                                     <td> <?php echo $row["name"] ?></td>
                                     <td> <?php echo $row["price"] ?></td>
                                     <td> <?php echo $row["stocks"] ?></td>
-                                    <td><a class = "first" href="editp.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-                                    <td><a class = "second" href="deletep.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
+                                    <td><a class = "a" href="editp.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                                    <td><a class = "a" href="deletep.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
