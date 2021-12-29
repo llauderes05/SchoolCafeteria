@@ -1,4 +1,4 @@
-*{
+ /* *{
     margin: 0;
     padding: 0;
 }
@@ -9,16 +9,56 @@ body{
     font-family: "Century Gothic", sans-serif;
 }
 
-table, tr, td, th{
-    border: 1px solid black;
-    border-collapse: collapse;
-    border-radius: 10px;
+
+
+tbody tr td 
+
+
+ */
+ table, tr, td, th{
     padding: 10px;
     margin: auto;
-    text-align: center;
+}
+ body{
+     background-color: #BBE1FA;
+     font-family: "Century Gothic", sans-serif;
+     color: white;
+     text-align: center;
+ }
+ .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-tbody tr td a{
+.styled-table thead tr {
+    background-color: #1B262C;
+    color: #ffffff;
+  
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #0F4C75;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #0F4C75;
+}
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #3282B8;
+}
+a{
     text-align: center;
     background-color: rgb(21, 146, 204);
     border: none;
@@ -29,22 +69,6 @@ tbody tr td a{
     margin: 2px 2px;
     cursor: pointer;
 }
-
-input[type=number]{
-   border: none;
-   outline: none;
-   padding: 5px;
-   border-radius: 5px;
-   width: 40px;
-}
-input[type=submit] {
-    text-align: center;
-    background-color: rgb(21, 204, 46);
-    border: none;
-    border-radius: 12px;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+/* .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+} */
