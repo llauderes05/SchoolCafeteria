@@ -4,10 +4,13 @@
     margin: auto;
 }
  body{
-     background-color: #BBE1FA;
-     font-family: "Century Gothic", sans-serif;
-     color: white;
-     text-align: center;
+    background-image: linear-gradient(rgba(87, 39, 143, 0.623), #85cdf7);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+    text-align: center;
  }
  .styled-table {
     border-collapse: collapse;

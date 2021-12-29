@@ -5,7 +5,10 @@
 
 body{
     font-family: "Century Gothic", sans-serif;
-    background: #81c7d3;
+    background-image: linear-gradient(rgba(87, 39, 143, 0.623), #85cdf7);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 h1{
@@ -20,7 +23,7 @@ h1{
     width: 320px;
     height: 420px;
     box-shadow: 0 0 30px rgba(40, 113, 196, 0.589);
-    background: transparent;
+    background-image: linear-gradient(rgba(96, 224, 247, 0.623), #8241b8);
     color: #000;
     top: 50%;
     left: 50%;
