@@ -1,16 +1,29 @@
+ /* *{
+    margin: 0;
+    padding: 0;
+}
 
+body{
+    background: #ccccff;
+    padding: 5px;
+    font-family: "Century Gothic", sans-serif;
+}
+
+
+
+tbody tr td 
+
+
+ */
  table, tr, td, th{
     padding: 10px;
     margin: auto;
 }
  body{
-    background-image: linear-gradient(rgba(87, 39, 143, 0.623), #85cdf7);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    font-family: "Century Gothic", sans-serif;
-    color: white;
-    text-align: center;
+     background-color: #BBE1FA;
+     font-family: "Century Gothic", sans-serif;
+     color: white;
+     text-align: center;
  }
  .styled-table {
     border-collapse: collapse;
@@ -47,7 +60,7 @@
 }
 a{
     text-align: center;
-    background-color: #1B262C;
+    background-color: rgb(21, 146, 204);
     border: none;
     border-radius: 3px;
     color: white;
@@ -56,3 +69,6 @@ a{
     margin: 2px 2px;
     cursor: pointer;
 }
+/* .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+} */
