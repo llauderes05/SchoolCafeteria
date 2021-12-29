@@ -47,8 +47,8 @@ include_once 'connection.php';
         }
     </script>
 
-<div class="table">
-<table class="content-table">
+<table class="styled-table">
+                <thead>
                     <tr>
                         <th> Item Name </th>
                         <th> Price </th>
@@ -69,8 +69,8 @@ include_once 'connection.php';
                                     <td> <?php echo $row["name"] ?></td>
                                     <td> <?php echo $row["price"] ?></td>
                                     <td> <?php echo $row["stocks"] ?></td>
-                                    <td><a class = "first" href="editm.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-                                    <td><a class = "second" href="deletem.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
+                                    <td><a class = "a" href="editm.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                                    <td><a class = "a" href="deletem.php?name=<?php echo $row['name']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
@@ -82,7 +82,7 @@ include_once 'connection.php';
                         ?>
                 </tbody>
             </table>
-            </div>
+           
             <div class="meals">
                 <h1>Add Stock for Meals</h1>
                 <form action="insertm.php" method="post">    

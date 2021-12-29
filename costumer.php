@@ -21,7 +21,7 @@
                 <th>Name</th>
                 <th>Price</th>
                 <th>Available</th>
-                <th>Quantity</th>
+                <th> </th>
             </tr>
             
             <tr>

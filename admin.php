@@ -45,16 +45,15 @@ include_once 'connection.php';
             }
         }
     </script>
-
-<div class="table">
-    <table class="content-table">
+    <table class="styled-table">
+                <thead>
                     <tr>
                         <th> System ID </th>
                         <th> Username </th>
                         <th> Password </th>
                         <th> Delete</th>
                     </tr>
-                
+                    </thead>
                 <tbody>
                     <?php
                         $sql = "SELECT ID, username, password FROM admin";
@@ -67,7 +66,7 @@ include_once 'connection.php';
                                     <td> <?php echo $row["ID"] ?></td>
                                     <td> <?php echo $row["username"] ?></td>
                                     <td> <?php echo $row["password"] ?></td>
-                                    <td><a class = "second" href="delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
+                                    <td><a class = "a" href="delete.php?ID=<?php echo $row['ID']; ?>">Delete</a></td>   
                                 </tr>
                                 <?php
                             }
@@ -81,7 +80,6 @@ include_once 'connection.php';
                     
                 </tbody>
     </table>
-</div>
             
             <section id="bg">
                 <div class="login-box">
