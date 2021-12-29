@@ -21,12 +21,14 @@
                         if($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 ?>
+                                <div class="edit">
                                 <form action="endd.php" method="post">
                                 <h1>How many would you like?</h1>
                                 <input type='number' name="qty" required>
                                 <input type="hidden" value="<?php echo $id; ?>" name="id">
                                 <input type="hidden" value="<?php echo $row["stocks"] ?>" name="stocks">
                                 <input type="submit">
+                                </div>
                                 <?php
                             }
                         } else {

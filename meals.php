@@ -15,11 +15,11 @@ include_once 'connection.php';
 			<ul>
 				<li><a href="index.php"></a></li>
 				<li><a href="admin.php">Admin</a></li>
-                <h1 style="margin: 20px; color:white;">Stock</h1>
+                <h2>Stock</h2>
 				<li><a href="meals.php">Meals</a></li>
 				<li><a href="pasta.php">Pasta</a></li>
 				<li><a href="drinks.php">Drinks</a></li>
-                <h1 style="margin: 20px; color:white;"><a href="index.php">Home</a></h1>
+                <h2><a href="index.php">Home</a></h2>
 			</ul>
 		</nav>
 	</div>

@@ -76,7 +76,7 @@ h1{
 .pasta input[type="submit"]:hover, .drinks input[type="submit"]:hover
 {
     cursor: pointer;
-    background: #66fff7;
+    background: #07857e;
     color: #fff5ff;
 }
 
@@ -185,3 +185,15 @@ th, td {
     text-align: center; 
 
   }
+
+  tbody tr td a{
+    text-align: center;
+    background-color: #3ca1f3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 3px 12px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+}
