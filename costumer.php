@@ -25,7 +25,7 @@
             </tr>
             <tbody>
             <?php
-                        $sql = "SELECT `name`, `price`, `stocks` FROM `meals`";
+                        $sql = "SELECT `name`, `price`, `stocks`, `id` FROM `meals`";
                         $result = $conn->query($sql);
                         
                         if($result->num_rows > 0) {
@@ -35,7 +35,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><a href="order.php?stocks=<?php echo $row['stocks']; ?>">Order</a></td>
+                                    <td><a href="orderm.php?id=<?php echo $row['id']; ?>">Order</a></td>
                                 </tr>
                                 <?php
                             }
@@ -50,7 +50,7 @@
             </tr>
             <tbody>
             <?php
-                        $sql = "SELECT `name`, `price`, `stocks` FROM `pasta`";
+                        $sql = "SELECT `name`, `price`, `stocks`, `id` FROM `pasta`";
                         $result = $conn->query($sql);
                         
                         if($result->num_rows > 0) {
@@ -60,7 +60,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><a href="order.php?stocks=<?php echo $row['stocks']; ?>">Order</a></td>
+                                    <td><a href="orderp.php?id=<?php echo $row['id']; ?>">Order</a></td>
                                 </tr>
                                 <?php
                             }
@@ -74,7 +74,7 @@
             </tr>
             <tbody>
             <?php
-                        $sql = "SELECT `name`, `price`, `stocks` FROM `drinks`";
+                        $sql = "SELECT `name`, `price`, `stocks`, `id` FROM `drinks`";
                         $result = $conn->query($sql);
                         
                         if($result->num_rows > 0) {
@@ -84,7 +84,7 @@
                                     <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
                                     <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
-                                    <td><a href="order.php?stocks=<?php echo $row['stocks']; ?>">Order</a></td>
+                                    <td><a href="orderd.php?id=<?php echo $row['id']; ?>">Order</a></td>
                                 </tr>
                                 <?php
                             }
