@@ -23,7 +23,7 @@
                                 ?>
                                 <div class="edit">
                                 <form action="endm.php" method="post">
-                                <h1>How many would you like?</h1>
+                                <h1>How many <?php echo $row["name"] ?> would you like?</h1>
                                 <input type='number' name="qty" required>
                                 <input type="hidden" value="<?php echo $id; ?>" name="id">
                                 <input type="hidden" value="<?php echo $row["stocks"] ?>" name="stocks">
