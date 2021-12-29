@@ -12,16 +12,21 @@
 <body>
 <form action="order.php" method="post">
     <div>
-        <table>
-            <tr><th colspan="4">MENU</th></tr>
+        <table class="styled-table">
+            <thead>
+            <tr>
+                <th colspan="4">MENU</th>
+            </tr>
             <tr>
                 <th>Name</th>
                 <th>Price</th>
                 <th>Available</th>
                 <th>Quantity</th>
             </tr>
+            
             <tr>
                 <th colspan="4">MEALS</th>
+            </thead>
             </tr>
             <tbody>
             <?php
@@ -31,10 +36,10 @@
                         if($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 ?>
-                                <tr style="border: solid 1px;">
-                                    <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
-                                    <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
-                                    <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
+                                <tr>
+                                    <td> <?php echo $row["name"] ?></td>
+                                    <td> <?php echo $row["price"] ?></td>
+                                    <td> <?php echo $row["stocks"] ?></td>
                                     <td><a href="orderm.php?id=<?php echo $row['id']; ?>">Order</a></td>
                                 </tr>
                                 <?php
@@ -45,8 +50,10 @@
                         ?>
             </tbody>
 
+            <thead>
             <tr>
                 <th colspan="4">PASTA</th>
+            </thead>
             </tr>
             <tbody>
             <?php
@@ -56,10 +63,10 @@
                         if($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 ?>
-                                <tr style="border: solid 1px;">
-                                    <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
-                                    <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
-                                    <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
+                                <tr>
+                                    <td> <?php echo $row["name"] ?></td>
+                                    <td> <?php echo $row["price"] ?></td>
+                                    <td> <?php echo $row["stocks"] ?></td>
                                     <td><a href="orderp.php?id=<?php echo $row['id']; ?>">Order</a></td>
                                 </tr>
                                 <?php
@@ -69,8 +76,10 @@
                         }
                         ?>
             </tbody>
+            <thead>
             <tr>
                 <th colspan="4">DRINKS</th>
+            </thead>
             </tr>
             <tbody>
             <?php
@@ -80,10 +89,10 @@
                         if($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 ?>
-                                <tr style="border: solid 1px;">
-                                    <td style="border: solid 1px;"> <?php echo $row["name"] ?></td>
-                                    <td style="border: solid 1px;"> <?php echo $row["price"] ?></td>
-                                    <td style="border: solid 1px;"> <?php echo $row["stocks"] ?></td>
+                                <tr>
+                                    <td> <?php echo $row["name"] ?></td>
+                                    <td> <?php echo $row["price"] ?></td>
+                                    <td> <?php echo $row["stocks"] ?></td>
                                     <td><a href="orderd.php?id=<?php echo $row['id']; ?>">Order</a></td>
                                 </tr>
                                 <?php
@@ -92,6 +101,7 @@
                             echo "No result";
                         }
                         ?>
+            </tbody>
             <!-- </tbody>
             <tr>
                 <td colspan="4">
