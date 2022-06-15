@@ -5,7 +5,7 @@
 }
 
 #banner{
-    background-image: linear-gradient(rgba(87, 39, 143, 0.623), #85cdf7);
+    background-image: linear-gradient(#4f1c1b, #291e2c);;
     background-size: cover;
     background-position: center;
     height: 100vh;
